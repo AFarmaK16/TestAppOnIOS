@@ -6,20 +6,20 @@
 //
 
 import UIKit
-
+import Firebase
 class ViewController: UIViewController {
-//    @IBAction func showMessage(_ sender: UIButton) {
-//        let alertController = UIAlertController(title: "Hello World", message: "Iyi Gunler:)", preferredStyle: .alert)
-//        alertController.addAction(UIAlertAction(title: "OK", style: .default ,handler: nil))
-//        present(alertController, animated: true, completion: nil)
-//       }
+
   
     override func viewDidLoad() {
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        var dataDic: [String: Any] = [:]
+        dataDic["First Name"] = "ABK"
+        dataDic["Last Name"] = "Asym"
+        ref.setValue(dataDic)
         super.viewDidLoad()
-//                let alertController = UIAlertController(title: "Hello World", message: "Iyi Gunler:)", preferredStyle: .alert)
-//                alertController.addAction(UIAlertAction(title: "OK", style: .default ,handler: nil))
-//        view.backgroundColor = UIColor.brown
-        print("Hello guys")
+
+        print("\n\tHello guys\n")
         // Do any additional setup after loading the view.
     }
 
