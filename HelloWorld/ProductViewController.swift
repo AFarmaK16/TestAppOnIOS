@@ -9,6 +9,12 @@ import UIKit
 class ProductViewController: UIViewController {
     
     
+    @IBAction func PerformPayment(_ sender: UIButton) {
+        print ("U've selected a product")
+        print ("With tag \(sender.tag)")
+    }
+    
+    
     //    let wave_Auth_token = "A"
          
  //        struct CheckoutRequestBody{
@@ -37,7 +43,7 @@ class ProductViewController: UIViewController {
 
            super.viewDidLoad()
          //  print("productView ready")
-          self.view.backgroundColor = .systemBlue
+       //   self.view.backgroundColor = .systemBlue
            // Do any additional setup after loading the view.
        }
 

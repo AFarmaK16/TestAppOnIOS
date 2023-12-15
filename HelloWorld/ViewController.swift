@@ -25,8 +25,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func showProductView(_ sender: Any) {
-        let pc = ProductViewController()
-        self.present(pc, animated: true,completion: nil)
+       // let pc = ProductViewController()
+        //self.present(pc, animated: true,completion: nil)
+        // Assuming the storyboard name is "Main"
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+                if let productViewController = storyboard.instantiateViewController(withIdentifier: "ProductViewController") as? ProductViewController {
+                    self.present(productViewController, animated: true, completion: nil)
+                }
         //print("button pressed")
     }
 
