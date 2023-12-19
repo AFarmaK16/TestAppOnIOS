@@ -6,23 +6,35 @@
 //
 
 import UIKit
-
+//import Firebase
 class ViewController: UIViewController {
-//    @IBAction func showMessage(_ sender: UIButton) {
-//        let alertController = UIAlertController(title: "Hello World", message: "Iyi Gunler:)", preferredStyle: .alert)
-//        alertController.addAction(UIAlertAction(title: "OK", style: .default ,handler: nil))
-//        present(alertController, animated: true, completion: nil)
-//       }
+
+  
+
   
     override func viewDidLoad() {
-        super.viewDidLoad()
-//                let alertController = UIAlertController(title: "Hello World", message: "Iyi Gunler:)", preferredStyle: .alert)
-//                alertController.addAction(UIAlertAction(title: "OK", style: .default ,handler: nil))
-//        view.backgroundColor = UIColor.brown
-        print("Hello guys")
+//        var ref: DatabaseReference!
+//        ref = Database.database().reference()
+//        var dataDic: [String: Any] = [:]
+//        dataDic["First Name"] = "ABK"
+//        dataDic["Last Name"] = "Asym"
+//        ref.setValue(dataDic)
+       super.viewDidLoad()
+
+        print("\n\tHello guys\n")
         // Do any additional setup after loading the view.
     }
+    @IBAction func showProductView(_ sender: Any) {
+       // let pc = ProductViewController()
+        //self.present(pc, animated: true,completion: nil)
+        // Assuming the storyboard name is "Main"
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
+                if let productViewController = storyboard.instantiateViewController(withIdentifier: "ProductViewController") as? ProductViewController {
+                    self.present(productViewController, animated: true, completion: nil)
+                }
+        //print("button pressed")
+    }
 
 }
 
