@@ -28,6 +28,8 @@
 		28DC4B952B23461500870CC8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 28DC4B942B23461500870CC8 /* FirebaseFirestore */; };
 		28DC4B972B23461500870CC8 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 28DC4B962B23461500870CC8 /* FirebasePerformance */; };
 		28DC4B992B23461500870CC8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 28DC4B982B23461500870CC8 /* FirebaseStorage */; };
+		28EA600D2B33330C001D67DE /* OrangeMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EA600C2B33330C001D67DE /* OrangeMoney.swift */; };
+		28EA600F2B333351001D67DE /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EA600E2B333351001D67DE /* Wave.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		2851B50F2B21D26D00A691F0 /* HelloWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		28AB482B2B2B5899005F3931 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		28DC4B832B2342E700870CC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		28EA600C2B33330C001D67DE /* OrangeMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeMoney.swift; sourceTree = "<group>"; };
+		28EA600E2B333351001D67DE /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 				28DC4B832B2342E700870CC8 /* GoogleService-Info.plist */,
 				28AB482B2B2B5899005F3931 /* ProductViewController.swift */,
 				2851B4F02B21D26B00A691F0 /* ViewController.swift */,
+				28EA600E2B333351001D67DE /* Wave.swift */,
+				28EA600C2B33330C001D67DE /* OrangeMoney.swift */,
 				2851B4F22B21D26B00A691F0 /* Main.storyboard */,
 				2851B4F52B21D26D00A691F0 /* Assets.xcassets */,
 				2851B4F72B21D26D00A691F0 /* LaunchScreen.storyboard */,
@@ -305,6 +311,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28EA600F2B333351001D67DE /* Wave.swift in Sources */,
+				28EA600D2B33330C001D67DE /* OrangeMoney.swift in Sources */,
 				2851B4F12B21D26B00A691F0 /* ViewController.swift in Sources */,
 				2851B4ED2B21D26B00A691F0 /* AppDelegate.swift in Sources */,
 				28AB482C2B2B5899005F3931 /* ProductViewController.swift in Sources */,

@@ -8,11 +8,16 @@
 import UIKit
 class ProductViewController: UIViewController {
     var price: Int = 0
+
     @IBOutlet weak var chossePayView: UIView!
-    //    let wave_Auth_token = "A"
-         
     @IBAction func payWithOM(_ sender: UIButton) {
-        print("choosed OM payment")
+        Task { @MainActor in
+            print("choosed OM payment")
+            let oc = OrangeMoneyViewController()
+            // oc.getOrangeMoneyToken()
+            print("RETRIEVED TOKEN IS ********************")
+            await print( oc.getOrangeMoneyToken() )
+        }
     }
     @IBAction func payWithWave(_ sender: Any) {
         print("choosed Wave payment")
