@@ -50,7 +50,7 @@ class ProductViewController: UIViewController {
                     var request = URLRequest(url: url)
                     request.httpMethod = "POST"
                     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-                           request.setValue("Bearer wave_sn_prod_KF7S-TZu5rF789Hj3pw_1M0xx28B32olssB-vJi88kBr_P2YA71hnQy6Ta7ZaxMJEy1JWR9WK3oXTewzVbqw8Ysmwr8wlG5QQA", forHTTPHeaderField: "Authorization")
+                           request.setValue("Bearer xxxxxxxxxx", forHTTPHeaderField: "Authorization")
                     let requestBody: CheckoutRequestBody = CheckoutRequestBody(amount: "\(price)")
                     do {
                                let jsonData = try JSONEncoder().encode(requestBody)
